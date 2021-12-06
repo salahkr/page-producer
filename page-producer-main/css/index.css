@@ -1,0 +1,576 @@
+
+header.header video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    right: 0;
+}
+
+/* إضافة الطبقة البيضاء التي تظهر أمام الفيديو */
+header.header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* bootstrap تغير الاتجاه ليصبح من اليمين الى اليسار و يتناسب مع النسخة الحديثة من */
+header.header{
+    text-align: right;
+}
+
+
+
+/* CSS تضمين ملف الخط ضمن صفحة */
+@font-face {
+    font-family: ar-font;
+    src: url("../fonts/Cairo-Regular.ttf");
+}
+
+/* تحديد جهة الخط من اليمين إلى اليسار وتطبيق الخط الجديد على جميع عناصر الصفحة */
+body {
+    direction: rtl;
+    font-family: ar-font;
+}
+
+/* التنسيقات المطبقة على الخط في العنوان الرئيسي */
+header.header .overlay .header-text h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+}
+
+/* التنسيقات المطبقة على الخط في الفقرة النصية */
+header.header .overlay .header-text p {
+    font-size: 18px;
+    color: #5d5d5d;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+/* ضبط الهامش العلوي للفقرة النصية */
+header.header .overlay .header-text {
+    margin-top: 7rem;
+}
+
+/* التنسيقات المطبقة على الأزرار */
+header.header .overlay .header-text .buttons {
+    border-radius: 0;
+    font-family: ar-font;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 8px 25px;
+}
+
+/* التنسيقات الخاصة بالزر الأول */
+header.header .overlay .header-text .buttons button:first-of-type {
+    background-color: #7233a2;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+/* تغير لون الخط والزر الأول عند مرور مؤشر الفأرة عليه */
+header.header .overlay .header-text .buttons button:first-of-type:hover {
+    background-color: #ffffff;
+    color: #7233a2;
+}
+
+/* التنسيقات الخاصة بالزر الثاني */
+header.header .overlay .header-text .buttons button:last-of-type {
+    background-color: transparent;
+    color: #7936b2;
+}
+
+/* تغير لون الخط والزر الثاني عند مرور مؤشر الفأرة عليه */
+header.header .overlay .header-text .buttons button:last-of-type:hover {
+    background-color: #7233a2;
+    color: #ffffff;
+}
+
+/* تغير لون الأزرار تدرجيًا عند مرور مؤشر الفأرة فوقهم */
+header.header .overlay .header-text .buttons button {
+    transition: all 0.5s ease;
+}
+
+/* تحريك صورة الوسام البنفسجي إلى زاوية الفقرة التي تحتوي صورة المنتج */
+header.header .overlay .product-img {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+header.header .overlay .product-img img {
+    width: 100%;
+}
+
+header.header .overlay .product-img img.label {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: auto;
+
+}
+
+header.header .overlay .product-img p {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* فصل الفقرة النصية "2000 ريال" إلى سطرين */
+header.header .overlay .product-img p span {
+    display: block;
+}
+
+/* navbar ضبط الهامش السفلي للصنف */
+header.header .overlay .navbar {
+    margin-bottom: 26px;
+}
+
+/* features تنسيق لون الخلفية أبيض وضبط الحاشية و اتجاه الكلام الخاص بالصنف */
+/* bootstrap تم اضافة الجزء الخاص بالاتجاة ليتناسب مع الاصدار الجديد من  */
+section.features {
+    padding: 25px 0;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+section.features .title h3 {
+    font-size: 36px;
+    color: #555555;
+    line-height: 120px;
+}
+
+/* إضافة خط تحت عنوان القسم وتطبيق التنسيقات الخاصة به */
+section.features .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 2px;
+    background-color: #7233a2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* تطبيق حاشية وهامش من الأسفل للعنوان الرئيسي */
+section.features .title {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* ضبط الحاشية والهامش لقسم مميزات المنتج */
+section.features .feature {
+    padding: 70px 0;
+    border-bottom: 3px solid #eeeeee;
+}
+
+/* تطبيق التنسيقات الخاصة بالعناوين الرئيسية وإضافة خط بجانب العناوين */
+section.features .feature .media .media-body h5 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7233a2;
+    border-right: 2px solid #7233a2;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+/* التنسيقات المطبقة على الخط في الفقرة النصية */
+section.features .feature .media .media-body p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+
+/* ضبط الهامش الخاص بالصور */
+section.features .feature .media img {
+    margin: 0 4rem;
+}
+
+/* ضبط الهامش العلوي الخاص بالكتلة النصية */
+section.features .feature .media .media-body {
+    margin-top: 50px;
+}
+
+/* تنسيق الفقرات النصية ذات العدد الزوجي فقط لتصبح محاذاة لليسار */
+section.features .feature:nth-of-type(even) {
+    text-align: left;
+}
+
+/* إلغاء الإطار الأيسر وإضافة إطار أيمن للعنوان */
+section.features .feature:nth-of-type(even) .media .media-body h5 {
+    border-right: 0;
+    border-left: 2px solid #7233a2;
+}
+
+/* تطبيق خلفية رمادية وضبط الحاشية من الأعلى والأسفل */
+section.prices {
+    padding: 55px 0;
+    background-color: #f7f7f7;
+}
+
+/* تطبيق التنسيقات الخاصة بالخط في العنوان */
+section.prices .title h3 {
+    font-size: 30px;
+    color: #555555;
+}
+
+/* إضافة إطار وتطبيق التنسيقات الخاصة بقوائم الأسعار */
+section.prices .plan {
+    width: 100%;
+    background-color: #ffffff;
+    color: #a9a9ab;
+    border: 2px solid #ededed;
+    padding-top: 15px;
+    margin-top: 100px;
+}
+
+/* تنسيقات الخط في قوائم الأسعار */
+section.prices .plan p {
+    color: #a044ff;
+    font-size: 18px;
+}
+
+/* التنسيقات المطبقة على خط السعر */
+section.prices .plan h3 {
+    font-size: 50px;
+    margin: 30px auto;
+}
+
+/* تطبيق التنسيقات على الخط المستخدم لكتابة العملة */
+section.prices .plan h3 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+/*التنسيقات المطبقة على القائمة*/
+section.prices .plan ul li {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* إلغاء الحاشية والهامش */
+section.prices .plan ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* التنسيقات المطبقة على الزر */
+section.prices button {
+    border: 1px solid #7233a2;
+    background-color: #ffffff;
+    color: #7233a2;
+    font-family: ar-font;
+    border-radius: 0;
+    padding: .5rem 1.75rem;
+}
+/* التنسيقات المطبقة عند مرور الفأرة فوق الزر */
+section.prices button:hover {
+    color: #fff;
+    background-color: #7233a2;
+}
+
+/* popular التنسيقات المطبقة على الفقرة الثالثة والموجودة ضمن الصنف */
+section.prices .plan.popular {
+    margin-top: 55px;
+    padding-top: 60px;
+}
+
+/* التنسيقات المطبقة على الزر في الفقرة الثالثة */
+section.prices .plan.popular button {
+    border: 1px solid #7233a2;
+    background-color: #7233a2;
+    color: #ffffff;
+}
+section.prices .plan.popular button:hover {
+    background-color: #ffffff;
+    color: #7233a2;
+}
+
+/* تنسيق خلفية بيضاء وضبط الحاشية من الأعلى ومن الأسفل */
+section.faq {
+    padding: 55px 0;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+/* تنسيقات الخط المطبقة على العنوان */
+section.faq .title h3 {
+    font-size: 30px;
+    color: #555555;
+}
+
+/* إضافة إطار للبطاقات وضبط الهامش للطرف السفلي */
+section.faq .card {
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+}
+
+/* بوضعها Bootstrap إزالة اللون من عنوان الصفحة التي قام */
+section.faq .card .card-header {
+    background-color: transparent;
+    border-bottom: 0;
+}
+
+/* التنسيقات المطبقة على الخط في العنوان */
+section.faq .card .card-header h5 a {
+    font-size: 18px;
+    color: #555555;
+    display: block;
+    font-weight: bold;
+    position: relative;
+}
+
+/* تغير موضع السهم الموجود في البطاقات */
+section.faq .card .card-header h5 a i {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+/* التنسيقات المطبقة على الفقرة النصية داخل جسم البطاقة وضبط الحاشية */
+section.faq .card .card-block {
+    font-size: 15px;
+    color: #959393;
+    line-height: 24px;
+    padding: 0 1.25rem 1.25rem;
+}
+
+/* ضبط الهامش الخاص بالعنوان */
+section.faq .title {
+    margin-bottom: 50px;
+}
+
+/* إزالة الخط أسفل عنوان الصفحة */
+section.faq .card .card-header h5 a:hover,
+section.faq .card .card-header h5 a:focus {
+    text-decoration: none;
+}
+
+/* تغير مؤشر السهم إلى الأعلى */
+section.faq .card .card-header h5 a.collapsed i:before {
+    content: "\f107";
+}
+
+/* ضبط مكان وحجم الفيديو داخل الصفحة */
+section.video {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+section.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* تطبيق التنسيقات الخاصة بالطبقة التي تغطي الفيديو */
+section.video .overlay {
+    background-color: rgba(106,48, 147, 0.7);
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* التنسيقات الخاصة بزر تشغيل الفيديو */
+section.video button {
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 30px;
+    font-family: ar-font;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0;
+    transform: translate(50%, -50%);
+}
+
+/* ضبط مكان شعار الفيديو وجعل الزر على شكل دائرة */
+section.video button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 50px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    line-height: 90px;
+}
+
+/* contact ضبط الحاشية ولون الخلفية للصنف الجديد */
+section.contact {
+    background-color: #131313;
+    padding: 60px 0 40px;
+    text-align: right;
+}
+
+/* تنسيقات الخط المطبقة على العنوان */
+section.contact .contact-us .title h4 {
+    font-size: 18px;
+    line-height: 50px;
+    color: #758594;
+}
+
+/* ضبط الهامش السفلي لحقول الإدخال */
+section.contact .contact-us form .form-group {
+    margin-bottom: 6px;
+}
+
+/* التنسيقات المطبقة على حقول الإدخال وتدوير زوايا حقول الإدخال */
+section.contact .contact-us form .form-group input,
+section.contact .contact-us form .form-group textarea {
+    border-radius: 3px;
+    background-color: #242424;
+    font-size: 18px;
+    line-height: 35px;
+    color: #aeadad;
+    font-family: ar-font;
+    /* bootstrap تم اضافة هذا الجزء ليلغى الحدود الافتراضية الموجوده فى النسخة الحديثة من */
+    border: none;
+}
+
+/* التنسيقات المطبقة على زر الإرسال وضبط الحاشية */
+section.contact .contact-us form button {
+    font-size: 18px;
+    border: 0;
+    background-color: #7233a2;
+    color: #ffffff;
+    font-family: ar-font;
+    border-radius: 3px;
+    padding: 7px 24px;
+}
+
+/* تطبيق اللون الأحمر على الرسائل التي تظهر عند إضافة خاطئة */
+section.contact .contact-us form .form-group .error {
+    color: red;
+}
+
+/* "تطبيق التنسيقات الخاصة بالعنوان "المنتجات الأكثر مشاهدة */
+section.contact .other-products .title h4 {
+    font-size: 18px;
+    line-height: 50px;
+    color: #758594;
+}
+
+/* تنسيقات الخط على العناوين الرئيسية */
+section.contact .other-products .media .media-body h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+/* تطبيق التنسيقات الخاصة بالفقرة النصية */
+section.contact .other-products .media .media-body p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+}
+
+/* ضبط الهامش السفلي للكتلة النصية */
+section.contact .other-products .media {
+    margin-bottom: 25px;
+}
+
+/*اعطاء مسافة للصورة من اليسار لوضع مسافة عن النص*/
+section.contact .other-products .media img {
+    margin-left: 20px;
+}
+
+/* تطبيق التنسيقات الخاصة بخلفية تذييل الصفحة */
+footer {
+    background-color: #1d1d1d;
+    line-height: 80px;
+    text-align: right;
+}
+
+/* التنسيقات المطبقة على أيقونات التواصل الاجتماعي */
+footer ul li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;color: #1d1d1d;
+    background-color: #718292;
+    border-radius: 50%;
+}
+
+/* ضبط الهامش والحاشية لأيقونات التواصل الاجتماعي */
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+footer ul li {
+    margin-left: 10px;
+    margin-right: 0 !important;
+}
+
+/* تغيير لون خلفية الأيقونات عند مرور مؤشر الفأرة فوقها */
+footer ul li a:hover {
+    background-color: #1479ec;
+}
+
+/* التنسيقات الخاصة بالفقرة النصية في أسفل الصفحة */
+footer .copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: left;
+}
+
+
+/* 900px تعديل بعض التنسيقات الخاصة بالترويسة لتتناسب مع شاشة العرض الأصغر من */
+@media (max-width: 992px) {
+    header {
+        overflow-x: hidden;
+    }
+
+    .product-img img:first-of-type {
+        width: 100%;
+    }
+
+    .buttons {
+        margin-bottom: 50px;
+    }
+
+    section.features .feature .media img {
+        margin: 0 2rem;
+    }
+
+    header.header .overlay .product-img img.label {
+        position: absolute;
+        top: -50px;
+        right: -5px;
+        width: auto;
+    }
+
+    header.header .overlay .product-img p {
+        position: absolute;
+        top: -30px;
+        right: 45px;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .copyright p {
+        text-align: center;
+    }
+}
+
+
