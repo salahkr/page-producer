@@ -563,6 +563,12 @@ footer .copyright p {
 
 }
 
+@media (max-width: 757px) {
+    header.header .overlay .product-img img {
+        width: 80%;
+    }
+}
+
 @media (max-width: 576px) {
     footer {
         text-align: center;
@@ -571,6 +577,7 @@ footer .copyright p {
     footer .copyright p {
         text-align: center;
     }
+
 }
 
 
