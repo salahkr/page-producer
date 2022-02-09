@@ -529,43 +529,42 @@ footer .copyright p {
 
 /* 900px تعديل بعض التنسيقات الخاصة بالترويسة لتتناسب مع شاشة العرض الأصغر من */
 @media (max-width: 992px) {
-    header {
-        overflow-x: hidden;
+  header .header-text {
+      padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+    header .overlay .product-img img {
+        margin-top: 100px;
     }
 
-    .product-img img:first-of-type {
-        width: 100%;
-    }
-
-    .buttons {
-        margin-bottom: 50px;
-    }
-
-    section.features .feature .media img {
-        margin: 0 2rem;
-    }
-
-    header.header .overlay .product-img img.label {
-        position: absolute;
-        top: -50px;
-        right: -5px;
-        width: auto;
+    header .overlay .product-img img.label {
+        right: 50% !important;
+        transform: translateX(50%);
     }
 
     header.header .overlay .product-img p {
-        position: absolute;
-        top: -30px;
-        right: 45px;
-        color: #ffffff;
-        font-size: 24px;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    section.features .media {
+        flex-flow: column;
         text-align: center;
     }
 
-}
+    section.features .feature .media img {
+        margin: 0 auto 50px;
+    }
 
-@media (max-width: 757px) {
-    header.header .overlay .product-img img {
-        width: 80%;
+    section.features .feature .media .media-body h5 {
+        border: none !important;
+    }
+
+    section.contact .other-products .title h4 {
+        margin-top: 50px;
     }
 }
 
